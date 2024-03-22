@@ -8,8 +8,14 @@ const Productpage = (props) => {
   const cartItemCount = cartItems[id] || 0;
 
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200 transition duration-300 transform hover:scale-105 p-2 m-2">
-      <img src={productImage} alt={productName} className="w-full h-auto" />
+    <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200 transition duration-300 transform hover:scale-105 p-2 m-2 max-w-xs">
+      <div className="aspect-w-1 aspect-h-1">
+        <img
+          src={productImage}
+          alt={productName}
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
       <div className="p-2">
         <h3 className="text-lg font-semibold mb-1">{productName}</h3>
         <p className="text-gray-700 mb-1">${price}</p>

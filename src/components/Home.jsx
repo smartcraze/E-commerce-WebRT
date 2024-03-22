@@ -8,7 +8,11 @@ const Home = () => {
         style={{ backgroundImage: 'url(/img16.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-          <h1 className="text-6xl text-white font-bold mb-8 shadow-lg">Welcome to My Homepage</h1>
+        <h1 className="text-6xl text-white font-bold mb-8 shadow-lg relative">
+  <span className="text-black absolute -inset-0.5">Welcome to My Homepage</span>
+  Welcome to My Homepage
+</h1>
+
           <p className="text-2xl text-white mb-8 font-semibold shadow-lg">This is the place where amazing things happen.</p>
           
           {/* Buttons */}

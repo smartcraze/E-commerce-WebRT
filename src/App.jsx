@@ -12,6 +12,7 @@ import Shoping from "./shop/Shoping";
 
 import { Cart } from "./shop/Cart";
 import Productpage from "./shop/Productpage";
+import Artisans from "./components/Artisans";
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/product" element={<Productpage />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/getstart" element={<Artisans />} />
               <Route path="/shop" element={<Shoping/>} />
               <Route path="/cart" element={<Cart />} />
             </Route>

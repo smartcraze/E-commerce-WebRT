@@ -8,6 +8,7 @@ import Home from './components/Home'
 import Profile from './components/Profile'
 import Login from './components/Login'
 import Register from './components/Register'
+import Product from './components/Product'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/register" element={<Register/>}/>
             <Route element={<PrivateRoutes />}>
               <Route path="/" element={<Home/>}/>
+              <Route path="/product" element={<Product/>}/>
               <Route path="/profile" element={<Profile/>}/>
             </Route>
           </Routes>

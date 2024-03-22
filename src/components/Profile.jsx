@@ -6,9 +6,9 @@ const Profile = () => {
   const { user } = useAuth();
   const [greeting, setGreeting] = useState('');
   const [background, setBackground] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState(user.phone);
-  const [address, setAddress] = useState(user.address);
-  const [postalCode, setPostalCode] = useState(user.postalCode);
+  const [phoneNumber, setPhoneNumber] = useState(localStorage.getItem('phoneNumber') || user.phone);
+  const [address, setAddress] = useState(localStorage.getItem('address') || user.address);
+  const [postalCode, setPostalCode] = useState(localStorage.getItem('postalCode') || user.postalCode);
   const [editPhoneNumber, setEditPhoneNumber] = useState(false);
   const [editAddress, setEditAddress] = useState(false);
   const [editPostalCode, setEditPostalCode] = useState(false);
@@ -40,6 +40,7 @@ const Profile = () => {
     // Check if input contains only integers and length <= 10
     if (/^\d{0,10}$/.test(input)) {
       setPhoneNumber(input);
+      localStorage.setItem('phoneNumber', input);
       setPhoneNumberError('');
     } else {
       setPhoneNumberError('Phone number should be numeric and maximum 10 digits.');
@@ -51,12 +52,15 @@ const Profile = () => {
     const input = e.target.value;
     // You can add validation logic for postal code here
     setPostalCode(input);
+    localStorage.setItem('postalCode', input);
     setPostalCodeError('');
   };
 
   // Handle changes in the address text box
   const handleAddressChange = (e) => {
-    setAddress(e.target.value);
+    const input = e.target.value;
+    setAddress(input);
+    localStorage.setItem('address', input);
   };
 
   // Toggle edit mode for Phone Number and Address sections
@@ -70,8 +74,8 @@ const Profile = () => {
     <div className={`bg-gray-100 min-h-screen ${background}`}>
       <div className="container mx-auto px-4 py-8 flex">
         <div className="w-1/4 flex flex-col items-center">
-          <div className="relative flex-shrink-0">
-            <img src={user.profilePicture} alt="Profile" className="rounded-full h-48 w-48 object-cover border-4 border-white" />
+          <div className="relative flex-shrink-0 py-14">
+            <img src="https://avatars.githubusercontent.com/u/133375708?v=4" alt="Profile" className="rounded-full  h-48 w-48 object-cover border-4 border-white " />
             <div className="absolute top-0 right-0 cursor-pointer" onClick={toggleEditContactInfo}>
               <BsPencilSquare size={24} />
             </div>

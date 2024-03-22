@@ -7,11 +7,11 @@ import Home from "./components/Home";
 import Profile from "./components/Profile";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Product from "./components/Product";
 import { ShopContextProvider } from "./shop/shop-context";
-import { Shop } from "./shop/shop";
+import Shoping from "./shop/Shoping";
 
 import { Cart } from "./shop/Cart";
+import Productpage from "./shop/Productpage";
 function App() {
   return (
     <Router>
@@ -23,9 +23,9 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route element={<PrivateRoutes />}>
               <Route path="/" element={<Home />} />
-              <Route path="/product" element={<Product />} />
+              <Route path="/product" element={<Productpage />} />
               <Route path="/profile" element={<Profile />} />
-              <Route path="/shop" element={<Shop />} />
+              <Route path="/shop" element={<Shoping/>} />
               <Route path="/cart" element={<Cart />} />
             </Route>
           </Routes>

@@ -26,7 +26,13 @@ Welcome to our Local Artisan Marketplace repository! This project aims to provid
 
 **Client:** React, Redux, TailwindCSS
 
-**Server:** Node, Express
+**Server:** Node, Express ,Appwrite
+
+
+## Screenshots
+
+![Map](map.png)
+
 
 
 ## Run Locally
@@ -46,7 +52,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm i
+  npm install
 ```
 
 Start the server

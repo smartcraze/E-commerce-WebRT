@@ -70,24 +70,24 @@ export const PRODUCTS = [
   id: 7,
   productName: "AUTO SERVICE SHIRT by GOLF WANG",
   price: 120.0,
-  productImage: "img7.jpg",
+  productImage: "imgi.png",
 },
 {
   id: 8,
   productName: "DON'T TRIP UNSTRUCTURED HAT",
   price: 40.0,
-  productImage: "img8.jpg",
+  productImage: "imgj.png",
 },
 {
   id: 7,
   productName: "AUTO SERVICE SHIRT by GOLF WANG",
   price: 120.0,
-  productImage: "img7.jpg",
+  productImage: "imgk.png",
 },
 {
   id: 8,
   productName: "DON'T TRIP UNSTRUCTURED HAT",
   price: 40.0,
-  productImage: "img8.jpg",
+  productImage: "imgl.png",
 },
 ];

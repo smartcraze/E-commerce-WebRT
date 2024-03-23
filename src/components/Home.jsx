@@ -23,7 +23,7 @@ const Home = () => {
           {/* Buttons */}
           <div>
             <button className="bg-black hover:bg-orange-500 text-white font-bold py-3 px-6 rounded mr-4 shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-              <Link to="/getstart">Get started </Link>
+              <Link to="/documentaion">Documentation </Link>
             </button>
             <button className="bg-black hover:bg-yellow-500 text-white font-bold py-3 px-6 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
               Shop Now

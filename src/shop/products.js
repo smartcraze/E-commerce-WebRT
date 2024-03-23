@@ -1,4 +1,7 @@
-export const PRODUCTS = [
+// products.js
+
+// Load PRODUCTS array from localStorage or use a default value if it's not available
+let PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
   {
     id: 1,
     productName: "IPhone",
@@ -11,40 +14,13 @@ export const PRODUCTS = [
     price: 1999.0,
     productImage: "img2.jpg",
   },
-  {
-    id: 3,
-    productName: "Cannon M50 Camera",
-    price: 699.0,
-    productImage: "img3.jpg",
-  },
-  {
-    id: 4,
-    productName: "WLS Van Gogh Denim Jacket",
-    price: 228.0,
-    productImage: "img4.jpg",
-  },
-  {
-    id: 5,
-    productName: "LED Light Strips",
-    price: 19.99,
-    productImage: "img5.jpg",
-  },
-  {
-    id: 6,
-    productName: "SPECTRUM LS TEE",
-    price: 68.0,
-    productImage: "img6.jpg",
-  },
-  {
-    id: 7,
-    productName: "AUTO SERVICE SHIRT by GOLF WANG",
-    price: 120.0,
-    productImage: "img7.jpg",
-  },
-  {
-    id: 8,
-    productName: "DON'T TRIP UNSTRUCTURED HAT",
-    price: 40.0,
-    productImage: "img8.jpg",
-  },
+  // other products
 ];
+
+const addProduct = (newProduct) => {
+  PRODUCTS = [...PRODUCTS, newProduct];
+
+  localStorage.setItem("products", JSON.stringify(PRODUCTS));
+};
+
+export { PRODUCTS, addProduct };

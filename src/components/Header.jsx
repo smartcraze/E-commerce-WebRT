@@ -72,6 +72,7 @@ const Header = () => {
             >
               Home
             </Link >
+            <a href="https://mediafiles.botpress.cloud/b6a50c2e-cbc9-479f-b81d-9c37f277bc27/webchat/bot.html" target="_blank" rel="noopener noreferrer" className="px-4 py-1 text-lg hover:text-gray-300 focus:text-gray-300 focus:outline-none transition duration-300">ChatBot</a>
             <Link to="/shop" className="px-4 py-1 text-lg hover:text-gray-300 focus:text-gray-300 focus:outline-none transition duration-300"> Shop </Link>
 
             <Link to="/cart" className="px-4 py-1 text-lg hover:text-gray-300 focus:text-gray-300 focus:outline-none transition duration-300">

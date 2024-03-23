@@ -1,10 +1,15 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 
 function Documentation() {
+  // Style for the YouTube video container
+  const videoContainerStyle = {
+    maxWidth: '100%',
+    marginBottom: '2rem',
+  };
+
   return (
     <div className="bg-gradient-to-b from-gray-200 to-gray-300 min-h-[89.5vh] flex flex-col justify-center items-center">
-      
-      
       {/* Content */}
       <div className="max-w-3xl mx-auto p-6 relative z-10 text-center text-gray-800">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
@@ -25,6 +30,11 @@ function Documentation() {
           artisanal treasures, you'll find inspiration and authenticity at every turn. 
           Join us in celebrating the creativity and craftsmanship of local artisans.
         </p>
+
+        {/* YouTube Video */}
+        <div style={videoContainerStyle}>
+          <YouTube videoId="H-bIrMqSrbw" />
+        </div>
       </div>
 
       {/* Decorative Elements */}

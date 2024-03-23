@@ -1,4 +1,6 @@
+// ProductUploadPage.js
 import React, { useState } from "react";
+import { addProduct } from "../shop/products";
 
 const ProductUploadPage = () => {
   const [productData, setProductData] = useState({
@@ -20,8 +22,17 @@ const ProductUploadPage = () => {
     e.preventDefault();
     // Add form validation here if needed
 
-    console.log(productData);
-    
+    const newProduct = {
+      id: Math.floor(Math.random() * 1000) + 1, // Generating random ID for demo purpose
+      productName: productData.name,
+      price: parseFloat(productData.price),
+      productImage: productData.image ? URL.createObjectURL(productData.image) : null
+    };
+
+    addProduct(newProduct); // Add new product using the function from products.js
+
+    console.log(newProduct); // For testing purposes
+
     setProductData({
       name: "",
       description: "",

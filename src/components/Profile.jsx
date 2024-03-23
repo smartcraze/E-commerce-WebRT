@@ -99,7 +99,7 @@ const Profile = () => {
             />
             <label htmlFor="profilePictureInput" className="cursor-pointer">
               <img
-                src={profilePicture || "https://via.placeholder.com/150"}
+                src={profilePicture || "\profilepichard.png"}
                 alt="Profile"
                 className="rounded-full h-48 w-48 object-cover border-4 border-white"
               />

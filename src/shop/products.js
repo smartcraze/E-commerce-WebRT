@@ -1,4 +1,7 @@
-export const PRODUCTS = [
+// products.js
+
+// Load PRODUCTS array from localStorage or use a default value if it's not available
+let PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
   {
     id: 1,
     productName: "IPhone",
@@ -91,3 +94,12 @@ export const PRODUCTS = [
   productImage: "imgl.png",
 },
 ];
+
+
+const addProduct = (newProduct) => {
+  PRODUCTS = [...PRODUCTS, newProduct];
+
+  localStorage.setItem("products", JSON.stringify(PRODUCTS));
+};
+
+export { PRODUCTS, addProduct };

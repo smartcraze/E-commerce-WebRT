@@ -27,9 +27,9 @@ Welcome to our Local Artisan Marketplace repository! This project aims to provid
 - Convenient and Secure Transactions: The platform provides a secure and user-friendly shopping experience, with multiple payment options available for buyers. All transactions are encrypted and processed securely to protect users' sensitive information.
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+**Client:** React, TailwindCSS
 
-**Server:** Node, Express ,Appwrite
+**Server:** Node ,Appwrite
 
 
 ## Screenshots

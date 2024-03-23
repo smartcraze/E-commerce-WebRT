@@ -14,6 +14,7 @@ const Profile = () => {
   const [editPostalCode, setEditPostalCode] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState('');
   const [postalCodeError, setPostalCodeError] = useState('');
+  const [profilePicture, setProfilePicture] = useState(localStorage.getItem('profilePicture') || '');
 
   const getTimeOfDay = () => {
     const hour = new Date().getHours();
@@ -63,6 +64,19 @@ const Profile = () => {
     localStorage.setItem('address', input);
   };
 
+  // Handle profile picture change
+  const handleProfilePictureChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProfilePicture(reader.result);
+        localStorage.setItem('profilePicture', reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   // Toggle edit mode for Phone Number and Address sections
   const toggleEditContactInfo = () => {
     setEditPhoneNumber((prevEditPhoneNumber) => !prevEditPhoneNumber);
@@ -75,7 +89,21 @@ const Profile = () => {
       <div className="container mx-auto px-4 py-8 flex">
         <div className="w-1/4 flex flex-col items-center">
           <div className="relative flex-shrink-0 py-14">
-            <img src="https://avatars.githubusercontent.com/u/133375708?v=4" alt="Profile" className="rounded-full  h-48 w-48 object-cover border-4 border-white " />
+            {/* Profile picture input */}
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleProfilePictureChange}
+              style={{ display: 'none' }}
+              id="profilePictureInput"
+            />
+            <label htmlFor="profilePictureInput" className="cursor-pointer">
+              <img
+                src={profilePicture || "https://via.placeholder.com/150"}
+                alt="Profile"
+                className="rounded-full h-48 w-48 object-cover border-4 border-white"
+              />
+            </label>
             <div className="absolute top-0 right-0 cursor-pointer" onClick={toggleEditContactInfo}>
               <BsPencilSquare size={24} />
             </div>

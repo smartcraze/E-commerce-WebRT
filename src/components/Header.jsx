@@ -29,7 +29,6 @@ const Header = () => {
           Coding X Smartcraze
         </Link>
       </div>
-
       {/* Hamburger menu for smaller devices */}
       <button
         className="text-white md:hidden focus:outline-none"

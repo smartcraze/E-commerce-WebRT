@@ -3,6 +3,9 @@
 
 Welcome to our Local Artisan Marketplace repository! This project aims to provide a platform for local artisans to showcase and sell their products to buyers in the community. It features an authentication system for both buyers and sellers, product pages for ordering, and shipment tracking with unique IDs.
 
+## Video Demo
+
+[![Watch the video](https://img.youtube.com/vi/H-bIrMqSrbw/0.jpg)](https://youtu.be/H-bIrMqSrbw?si=mmqPmJaU_3hOX_9i)
 
 
 ## Features
@@ -68,7 +71,7 @@ Start the server
 - [@z4heed](https://github.com/z4heed)
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/surajv354/)
+
 

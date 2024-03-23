@@ -32,6 +32,7 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/orders" element={<OrderTrackingPage />} />
               
+              
             </Route>
           </Routes>
         </ShopContextProvider>

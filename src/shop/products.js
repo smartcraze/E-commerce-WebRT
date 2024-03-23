@@ -94,8 +94,7 @@ let PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
   productImage: "img8.jpg",
 },
 ];
-  // other products
-];
+
 
 const addProduct = (newProduct) => {
   PRODUCTS = [...PRODUCTS, newProduct];

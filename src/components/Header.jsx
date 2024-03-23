@@ -26,7 +26,7 @@ const Header = () => {
           to="/"
           className="text-white font-bold text-2xl hover:scale-105 transition duration-300"
         >
-          Coding X Smartcraze
+          WebRT x Smartcraze
         </Link>
       </div>
       {/* Hamburger menu for smaller devices */}

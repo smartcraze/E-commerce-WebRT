@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes blink {
+    0% {
+      color: black;
+    }
+    50% {
+      color: yellow;
+    }
+    100% {
+      color: black;
+    }
+  }
+  
+  .text-blink {
+    animation: blink 1s infinite;
+  }
+  

@@ -1,6 +1,6 @@
 import React from "react";
 import { PRODUCTS } from "./products";
-import ProductPage from "./ProductPage";
+import ProductPage from "./Productpage";
 
 const Shopping = () => {
   return (

@@ -12,13 +12,13 @@ const Home = () => {
         }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-        <h1 className="text-6xl text-white font-bold mb-8 shadow-lg relative">
-  <span className="text-black absolute -inset-0.5">Welcome to My Homepage</span>
-  Welcome to My Homepage
-</h1>
+          <h1 className="text-6xl text-white font-bold mb-8 shadow-lg">
+            Welcome to My Homepage
+          </h1>
+          <p className="text-2xl text-white mb-8 font-semibold shadow-lg">
+            This is the place where amazing things happen.
+          </p>
 
-          <p className="text-2xl text-white mb-8 font-semibold shadow-lg">This is the place where amazing things happen.</p>
-          
           {/* Buttons */}
           <div>
             <button className="bg-black hover:bg-orange-500 text-white font-bold py-3 px-6 rounded mr-4 shadow-md transition duration-300 ease-in-out transform hover:scale-105">

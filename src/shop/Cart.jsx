@@ -11,26 +11,31 @@ export const Cart = () => {
 
   return (
     <div className="container mx-auto py-8">
+      {/* Cart Title */}
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-3xl font-semibold">Your Cart Items</h1>
         <div>
+          {/* Button to Navigate to Orders Page */}
           <button
             className="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition duration-300"
             onClick={() => navigate("/orders")}
           >
-            Track your Shipment
+            Your Orders
           </button>
         </div>
       </div>
 
+      {/* Display Cart Items */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
             return <CartItem key={product.id} data={product} />;
           }
+          return null; // To satisfy React's requirement of returning a value in map function
         })}
       </div>
 
+      {/* Display Total Amount and Checkout Options */}
       {totalAmount > 0 ? (
         <div className="mt-8">
           <p className="text-lg font-semibold mb-2">Subtotal: ${totalAmount}</p>

@@ -13,7 +13,7 @@ const Profile = () => {
   const [editAddress, setEditAddress] = useState(false);
   const [editPostalCode, setEditPostalCode] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState('');
-  const [postalCodeError, setPostalCodeError] = useState('');
+  const [, setPostalCodeError] = useState('');
   const [profilePicture, setProfilePicture] = useState(localStorage.getItem('profilePicture') || '');
 
   const getTimeOfDay = () => {

@@ -3,7 +3,7 @@ let PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
   
   {
     id: 4,
-    productName: "WLS Van Gogh Denim Jacket",
+    productName: "abc",
     price: 228.0,
     productImage: "imga.png",
   },

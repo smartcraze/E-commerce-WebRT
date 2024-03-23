@@ -1,23 +1,6 @@
 // Load PRODUCTS array from localStorage or use a default value if it's not available
 let PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
-  {
-    id: 1,
-    productName: "IPhone",
-    price: 999.0,
-    productImage: "img17.png",
-  },
-  {
-    id: 2,
-    productName: "Macbook Pro 2022 (M1)",
-    price: 1999.0,
-    productImage: "img18.png",
-  },
-  {
-    id: 3,
-    productName: "Cannon M50 Camera",
-    price: 699.0,
-    productImage: "img19.png",
-  },
+  
   {
     id: 4,
     productName: "WLS Van Gogh Denim Jacket",

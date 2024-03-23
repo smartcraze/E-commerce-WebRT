@@ -8,7 +8,7 @@ const ProductPage = (props) => {
   const cartItemCount = cartItems[id] || 0;
 
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200 transition duration-300 transform hover:scale-105 p-2 m-2 max-w-xs shadow-md h-full"> {/* Added h-full class to make all cards same height */}
+    <div className="rounded-lg overflow-hidden shadow-lg border border-gray-200 transition duration-300 transform hover:scale-105 p-2 m-2 max-w-xs shadow-md h-full">
       <div className="aspect-w-1 aspect-h-1">
         <img
           src={productImage}

@@ -9,6 +9,7 @@ const Home = () => {
           backgroundImage: "url(/img16.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          
         }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
